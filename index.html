@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Freelance登録＆問い合わせLP</title>
+    <title>Freelance登録＆問い合わせ</title>
     <meta name="description" content="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,163 +14,228 @@
 </head>
 <body>
     <section class="all_section">
-        <section class="header">
+        <section id="header" class="header">
             <div class="logo">
+                <img src="images/logo_header.png" alt="フリーランス問い合わせページ" />
             </div>
             <div class="navi_btn">
                 <nav class="navi">
+                    <a href="#top">top</a>
+                    <a href="#about">サービスについて</a>
+                    <a href="#flow">ご利用の流れ</a>
+                    <a href="#voice">ご利用者の声</a>
+                    <a href="#faq">よくあるご質問</a>
+                    <a href="#column">お知らせ・コラム</a>
+                    <a></a>
                 </nav>
                 <div class="btn">
                     <div class="Qbtn">
+                        <img src="images/Q-icon.png" />
+                        <a>お問い合わせ</a>
+                    </div>
                     </div>
                     <div class="Rbtn">
+                        <img src="images/R-icon.png" />
+                        <a>エンジニア登録</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="top">
+        <section id="top" class="top">
             <div class="hero">
                 <div class="hero_contents_btn">
                     <div class="hero_index">
+                        <p>ITエンジニアの<br>経験を、次の仕事へ。</p>
                     </div>
                     <div class="hero_content">
+                        <p>Freelance Fieldは、フリーランス・ITエンジニアの<br>
+                            ご希望やご経験に合わせて、案件をご案内する<br>
+                            マッチングサポートサービスです。
+                        </p>
                     </div>
                     <div class="btn">
-                        <div class="Rbtn">
-                        </div>
+                        <a class="Rbtn" href="#top">
+                            <span>
+                                <img src="images/R-icon.png" />
+                                エンジニア無料登録
+                                <img src="images/R_arrow.png" />
+                            </span>
+                        </a>
                         <div class="Qbtn">
+                           <img src="images/Q-icon.png" />
+                            <a>お問い合わせ</a>
                         </div>
                     </div>
                 </div>
                 <div class="hero_details">
                     <p>
-                        <img class="hero_detail_image"/><span class="hero_detail"></span>
+                        <span class="parallelogram-border hero_detail-1">
+                            <img class="hero_detail hero_detail_image" src="images/hero_detail_01.png" />
+                            <span class="hero_detail">リモート希望も相談可能</span>
+                        </span>
                     </p>
                     <p>
-                        <img class="hero_detail_image"/><span class="hero_detail"></span>
+                        <span class="parallelogram-border hero_detail-2">
+                            <img class="hero_detail hero_detail_image" src="images/hero_detail_2.png" />
+                            <span class="hero_detail">柔軟な働き方をサポート</span>
+                        </span>
                     </p>
                     <p>
-                        <img class="hero_detail_image"/><span class="hero_detail"></span>
+                        <span class="parallelogram-border hero_detail-3">
+                            <img class="hero_detail hero_detail_image" src="images/hero_detail_3.png" />
+                            <span class="hero_detail">経験・スキルに合った案件をご紹介</span>
+                        </span>
                     </p>
                 </div>
             </div>
             <div class="hero_image">
-                <img class="hero_image"/>
+                <img class="hero_image" src="images/hero_img.png" />
             </div>
         </section>
 
-        <section class="about">
+        <section id="about" class="about">
             <div class="service">
-                <p class="service_index"></p>
-                <p class="service_comment"></p>
+                <h1 class="service_index">───　Freelance Fieldのサービス　───</h1>
+                <p class="service_comment">ITエンジニアと企業をつなぎ、最適なマッチングをサポートします。</p>
             </div>
-            <div class="for_engin">
-                <div class="engin_image">
-                    <img class="engin_image"/>
-                </div>
-                <div class="engin_guide">
-                    <p class="engin_index"></p>
-                    <p class="engin_comment"></p>
-                    <div class="Rbtn">
+            <div class="engin_company">
+                <div class="for_engin">
+                    <div class="engin_image">
+                        <img class="engin_image" src="images/for_engineers.png"/>
+                    </div>
+                    <div class="engin_guide">
+                        <p class="engin_index">エンジニアの方へ</p>
+                        <p class="engin_comment">ご経験・スキル・希望条件を登録いただくと<br>
+                                                条件に合う案件を個別にご案内します。
+                        </p>
+                        <a class="Rbtn" href="#top">
+                            <span>無料で登録する
+                            <img src="images/R_arrow.png" /></span>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="for_company">
-                <div class="company_image">
-                    <img class="company_image" />
-                </div>  
-                <div class="company_guide">
-                    <p class="company_index"></p>
-                    <p class="company_comment"></p>
-                    <div class="Qbtn">
+                <div class="for_company">
+                    <div class="company_image">
+                        <img class="company_image" src="images/for_company.png"/>
+                    </div>  
+                    <div class="company_guide">
+                        <p class="company_index">企業のご担当者様へ</p>
+                        <p class="company_comment">IT人材のご提案・業務委託のご相談など<br>
+                                                まずはお気軽にお問い合わせください。
+                        </p>
+                        <div class="Qbtn">
+                           <img src="images/Q-icon.png" />
+                            <a>お問い合わせ</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="flow">
+        <section id="flow" class="flow">
             <div class="service">
-                <p class="service_index"></p>
-                <p class="service_comment"></p>
+                <h1 class="service_index">ご利用の流れ</h1>
+                <p class="service_comment">ご登録から案件のご案内までの流れをご紹介します。</p>
             </div>
             <div class="flow_contents">
                 <div class="flow_img_content">
                     <div class="flow_img">
+                        <img src="images/flow_1.png" />
                     </div>
                     <div class="flow_content">
                         <div class="flow_detail">
-                            <p class="flow_num"></p>
-                            <p class="flow_title"></p>
-                            <p class="flow_desc"></p>
+                            <p class="flow_num">01</p>
+                            <p class="flow_title">無料登録</p>
+                            <p class="flow_desc">フォームから<br>必要事項を入力</p>
                         </div>
                     </div>
 
                     <div class="flow_img">
+                        <img src="images/flow_arrow.png" />
+                        <img src="images/flow_2.png" />
                     </div>
                     <div class="flow_content">
                         <div class="flow_detail">
-                            <p class="flow_num"></p>
-                            <p class="flow_title"></p>
-                            <p class="flow_desc"></p>
+                            <p class="flow_num">02</p>
+                            <p class="flow_title">条件のヒアリング</p>
+                            <p class="flow_desc">ご希望の働き方・スキル・<br>条件に合う案件を個別にご案内します。確認します。</p>
                         </div>
                     </div>
 
                     <div class="flow_img">
+                        <img src="images/flow_arrow.png" />
+                        <img src="images/flow_3.png" />
                     </div>
                     <div class="flow_content">
                         <div class="flow_detail">
-                            <p class="flow_num"></p>
-                            <p class="flow_title"></p>
-                            <p class="flow_desc"></p>
+                            <p class="flow_num">03</p>
+                            <p class="flow_title">案件のご案内</p>
+                            <p class="flow_desc">条件に合う案件があれば<br>個別にご連絡します</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="reason">
+        <section id="reason" class="reason">
             <div class="service">
-                <p class="service_index"></p>
-                <p class="service_comment"></p>
+                <p class="service_index">Freelance Fieldが選ばれる理由</Fieldset></p>
+                <p class="service_comment">フリーランス・ITエンジニアの働き方を、実務面からしっかりサポートします。</p>
             </div>
             <div class="reason_contents">
                <div class="reason_content">
                     <img class="reason_image"/>
-                    <p class="reason_index"></p>
-                    <p class="reason_content"></p>
+                    <p class="reason_index">柔軟な働き方に対応</p>
+                    <p class="reason_content">リモート・週 数日・時短など<br>ライフスタイルに合った<br>働き方をご相談いただけます。</p>
                </div>
 
                <div class="reason_content">
                     <img class="reason_image"/>
-                    <p class="reason_index"></p>
-                    <p class="reason_content"></p>
+                    <p class="reason_index">幅広い案件のご紹介</p>
+                    <p class="reason_content">業務システム・Web・アプリ・<br>インフラなど、<br>多様な案件に対応しています。</p>
                </div>
 
                <div class="reason_content">
                     <img class="reason_image"/>
-                    <p class="reason_index"></p>
-                    <p class="reason_content"></p>
+                    <p class="reason_index">専任担当のサポート</p>
+                    <p class="reason_content">ご希望の条件に合わせて、<br>担当者が案件のご提案から<br>参画までサポートします。</p>
                </div>
 
                <div class="reason_content">
                     <img class="reason_image"/>
-                    <p class="reason_index"></p>
-                    <p class="reason_content"></p>
+                    <p class="reason_index">安心の情報管理</p>
+                    <p class="reason_content">ご登録いただいた情報は<br>案件のご案内のみに使用し、<br>適切に管理いたします。</p>
                </div>
             </div>
         </section>
 
-        <section class="voice">
+        <section id="voice" class="voice">
             <div class="service">
-                <p class="service_index"></p>
-                <p class="service_comment"></p>
+                <p class="service_index">ご利用者の声</p>
+                <p class="service_comment">Freelance Fieldをご利用いただいたエンジニアの皆様からの声をご紹介します。</p>
             </div>
             <div class="voice_contents">
                <div class="voice_content">
                     <img class="voice_image"/>
-                    <p class="voice_index"></p>
-                    <p class="voice_content"></p>
+                    <p class="voice_index">希望の条件に合う案件を紹介してもらえました</p>
+                    <p class="voice_content">
+                        リモート中心の案件を希望していましたが、<br>
+                        スキルや経験に合った案件を複数ご提案いただき、<br>
+                        安心して参画できました。<br>
+                        (30代／バックエンドエンジニア)
+                    </p>
+               </div>
+
+               <div class="voice_content">
+                    <img class="voice_image"/>
+                    <p class="voice_index">相談しやすく、対応がスムーズでした</p>
+                    <p class="voice_content">
+                        条件のすり合わせから参画まで、<br>
+                        担当の方が丁寧にサポートしてくれました。<br>
+                        フリーランスでも安心して働けています。<br>
+                        (40代／インフラエンジニア)
+                    </p>
                </div>
 
                <div class="voice_content">
@@ -202,88 +267,91 @@
                     <p class="voice_index"></p>
                     <p class="voice_content"></p>
                </div>
+            </div>
+        </section>
 
-               <div class="voice_content">
-                    <img class="voice_image"/>
-                    <p class="voice_index"></p>
-                    <p class="voice_content"></p>
-               </div>
-            </section>
-
-        <section class="faq">
+        <section id="faq" class="faq">
             <div class="service">
-                <p class="service_index"></p>
+                <p class="service_index">よくあるご質問</p>
             </div>
             <div class="faq_contents">
                 <div class="faq_list">
                     <div class="faq_content">
                         <img class="faq_image"/>
-                        <p class="faq_index"></p>
+                        <p class="faq_index">登録は無料ですか？</p>
                         <p class="faq_content"></p>
                     </div>
 
                     <div class="faq_content">
                         <img class="faq_image"/>
-                        <p class="faq_index"></p>
+                        <p class="faq_index">どのような案件を紹介してもらえますか？</p>
                         <p class="faq_content"></p>
                     </div>
 
                     <div class="faq_content">
                         <img class="faq_image"/>
-                        <p class="faq_index"></p>
+                        <p class="faq_index">登録後、どのくらいで案件の紹介がありますか？</p>
                         <p class="faq_content"></p>
                     </div>
 
                     <div class="faq_content">
                         <img class="faq_image"/>
-                        <p class="faq_index"></p>
+                        <p class="faq_index">会社員でも登録できますか？</p>
                         <p class="faq_content"></p>
                     </div>
                 </div>
                 <div class="otoiawase">
                     <img class="otoiawase_image"/>
-                    <p class="otoiawase_index"></p>
+                    <p class="otoiawase_index">その他のご質問・ご相談も<br>お気軽にお問い合わせください。</p>
                         <div class="Qbtn">
+                            <a>お問い合わせ</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="column">
+        <section id="column" class="column">
             <div class="service">
-                <p class="service_index"></p>
+                <p class="service_index">お知らせ・コラム</p>
             </div>
             <div class="column_contents">
                 <div class="column_content">
                     <img class="column_image" />
-                    <p class="column_date"></p>
-                    <p class="column_detail"></p>
+                    <p class="column_date">2026.10.20</p>
+                    <p class="column_detail">フリーランスの働き方|<br>案件選びのポイントとは？</p>
                 </div>
  
                 <div class="column_content">
                     <img class="column_image" />
-                    <p class="column_date"></p>
-                    <p class="column_detail"></p>
+                    <p class="column_date">2026.10.13</p>
+                    <p class="column_detail">ITエンジニアの市場動向と<br>今後のキャリア</p>
                 </div>
  
                 <div class="column_content">
                     <img class="column_image" />
-                    <p class="column_date"></p>
-                    <p class="column_detail"></p>
+                    <p class="column_date">2026.10.06</p>
+                    <p class="column_detail">リモートで成果を出す<br>ための工夫</p>
                 </div>
 
                 <div class="Cbtn">
+                    <a>おしらせ・コラム一覧</a>
                 </div>
             </div>
         </section>
 
-        <section class="footer">
+        <section id="footer" class="footer">
             <div class="logo">
+                <img src="images/logo_footer.png" alt="フリーランス問い合わせページ" />
             </div>
             <div class="footer_navi">
+                <a>運営会社</a>
+                <a>プライバシーポリシー</a>
+                <a>利用規約</a>
+                <a>お問い合わせ</a>
             </div>
             <div class="company_copy">
+                <a>©Swingby Technology Co.,Ltd.</a>
             </div>
         </section>
 
