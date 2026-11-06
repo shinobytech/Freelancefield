@@ -1,4 +1,17 @@
 
+:root {
+  --green: #014B60;
+  --light-green: #60d282;
+  --light-blue: #ebf6f8;
+  --white: #ffffff;
+  --orange: #fb7901;;
+  --text: #1a1a1a;
+  --gray: #555;
+  --line: #d9dce3;
+  --bg-gray: #eff1f6;
+  --ease: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
 .html{
 
 }
@@ -12,7 +25,9 @@
 }
 
 .header {
-
+  display: flex;
+  align-items: center; /* 縦方向の中央に揃える */
+  justify-content: space-between;
 }
 
 .logo {
@@ -20,67 +35,153 @@
 }
 
 .navi_btn {
-
+  display: flex;
+  padding: 10px;
+  align-items: center; /* 縦方向の中央に揃える */
+}
+.navi {
+  color: var(--green);
+  padding: 10px;
+  font-size: 0.9rem;
+}
+.navi a {
+  text-decoration: none;
 }
 
 .btn {
-
+  display: flex;
+  align-items: center; /* 縦方向の中央に揃える */
 }
 
 .Qbtn {
-
+  display: flex;
+  align-items: center; /* 縦方向の中央に揃える */
+  background-color: var(--white);
+  color: var(--green);
+  padding: 10px;
+  margin: 0.25rem;
+  font-size: 0.9rem;
+  border: 0.1rem solid var(--green);
+  border-radius: 1.0rem;
+  width: 7rem;
 }
-
+.Qbtn img {
+  width: 1.5rem;
+}
 .Rbtn {
-
+  display: flex;
+  align-items: center; /* 縦方向の中央に揃える */
+  justify-content: center;  /* 左右方向のセンター揃え */
+  color: var(--white);
+  padding: 10px;
+  margin: 0.25rem;
+  font-size: 0.9rem;
+  border: 0.1rem solid var(--orange);
+  background-color: var(--orange);
+  border-radius: 1.0rem;
+  width: 12rem;
+  text-decoration: none;
 }
-
+.Rbtn img {
+  width: 1.5rem;
+}
 .Cbtn {
-
+  color: var(--orange);
+  padding: 10px;
+  margin: 0.25rem;
+  font-size: 0.9rem;
+  border: 0.1rem solid var(--orange);
+  background-color: var(--white);
+  border-radius: 1.0rem;
 }
 
 .top {
-
+  position: relative;
+  display: inline-block; /* 画像のサイズに箱を合わせる */
 }
 
 .hero {
-
+  position: absolute;
+  display: flex;
+  align-items: center; /* 縦方向の中央に揃える */
 }
 
 .hero_contents_btn {
-
+  margin-left: 7rem;    
 }
 
 .hero_index {
-
+  font-size: 2.0rem;
+  color: var(--white);
 }
 
 .hero_content {
-
+  color: var(--white);
 }
 
 .hero_details {
-
+  color: var(--white);
 }
 
 .hero_detail_image {
-
+  width: 1.5rem;
+}
+.parallelogram-border {
+  background: linear-gradient(to right, var(--light-green), var(--green));
+  margin-top: 2.5rem;  margin-bottom: 2.5rem;
+  display: block;
+  align-items: center; /* 縦方向の中央に揃える */
+  padding: 0.5rem 2.0rem;
+  transform: skewX(20deg);    /* 全体を左に20度傾ける */
+  margin: 0 10px;             /* 傾きによる文字被り防止の余白 */
 }
 
 .hero_detail {
-
+  display: inline-block;
+  transform: skewX(-20deg);     /* 文字だけを右に20度傾けて元に戻す */
+}
+.hero_detail-1 { margin-right: 5.0rem; }
+.hero_detail-2 { margin-left: 2.0rem; margin-right: 3.0rem; }
+.hero_detail-3 { margin-left: 3.0rem; margin-right: 1.0rem; }
+.hero_image {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.hero_image {
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--green);
+}
 
+.service_index {
+  color: var(--green);
+}
+
+.service_comment {
+  color: var(--text);
 }
 
 .about {
+}
 
+.engin_company {
+  width: 100%;
+  display: flex;
+  align-items: center; /* 縦方向の中央に揃える */
+  justify-content: space-between;
 }
 
 .for_engin {
-
+  display: flex;
+  align-items: center; /* 縦方向の中央に揃える */
+  background-color: var(--light-blue);
+  border-radius: 1.2rem;
+  padding: 0 5rem;
+  margin-left: 1rem;
 }
 
 .engin_image {
@@ -92,19 +193,26 @@
 }
 
 .engin_index {
-
+  font-size: 1.7rem;
+  font-weight: 700;
 }
 
 .engin_comment {
 
 }
 
-.for_compan {
-
+.for_company {
+  display: flex;
+  align-items: center; /* 縦方向の中央に揃える */
+  background-color: var(--light-blue);
+  border-radius: 1.2rem;
+  padding: 0 5rem;
+  margin-right: 1rem;
 }
 
-.company_image {
-
+.company_index {
+  font-size: 1.7rem;
+  font-weight: 700;
 }
 
 .company_image {
@@ -124,11 +232,14 @@
 }
 
 .flow {
-
+  background-color: var(--light-blue);
+  margin-top: 1.5rem;
 }
 
 .flow_contents {
-
+  display: flex;
+  align-items: center; /* 縦方向の中央に揃える */
+  justify-content: space-between;
 }
 
 .flow_img_content {
@@ -272,7 +383,10 @@
 }
 
 .footer {
-
+    background-color: var(--green);
+    display: flex;
+    align-items: center; /* 縦方向の中央に揃える */
+    justify-content: space-between;
 }
 
 .footer_navi {
